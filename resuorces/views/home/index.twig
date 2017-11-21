@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>  my view</h1>
+<p>welcome from view </p>
+
+{{ adne }}
+
+<ul>
+{% for c in posts %}
+    <li>{{ c.title }}</li>
+    <li style="color: red"> {{ c.content }}</li>
+
+
+{% endfor %}
+</ul>
+
+Count of post = {{ count }}
+
+
+
+</body>
+</html>
