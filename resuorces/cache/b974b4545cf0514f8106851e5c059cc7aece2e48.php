@@ -5,24 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User</title>
+    <title>Document</title>
 </head>
 <body>
+  <p>ID  ::  <?php echo e($user->id); ?></p>
 
-<h1> Users </h1>
-
-<a href="http://localhost/te/public/Us/create"> NEW USER </a>
-
-
-
-<ul>
-
-    @foreach($users as $user)
-        <li> {{ $user->email }} </li>
-        <a href="Us/{{$user->id}}/delete"> delete </a>
-    @endforeach
-
-</ul>
-
+   <p> Name   :: <?php echo e($user->name); ?></p>
 </body>
 </html>

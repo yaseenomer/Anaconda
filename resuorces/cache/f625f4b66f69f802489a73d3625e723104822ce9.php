@@ -17,10 +17,10 @@
 
 <ul>
 
-    @foreach($users as $user)
-        <li> {{ $user->email }} </li>
-        <a href="Us/{{$user->id}}/delete"> delete </a>
-    @endforeach
+    <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <li> <?php echo e($user->email); ?> </li>
+        <a href="Us/<?php echo e($user->id); ?>/delete"> delete </a>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 </ul>
 
